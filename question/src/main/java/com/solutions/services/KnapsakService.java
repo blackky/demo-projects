@@ -7,15 +7,19 @@ import com.solutions.bean.Data;
 @Service
 public class KnapsakService {
 
+	/*
+	 * Process data and return the output. throws Excpetion if weights and
+	 * values array length mismatch
+	 */
 	public int knapSack(Data bean) throws Exception {
 		int max_weight = bean.getMax_weight();
 		int weight[] = bean.getWeights();
 		int values[] = bean.getValues();
 		int index, w;
 		if (weight.length != values.length) {
-			throw new Exception("Array lenght mismatch");
+			throw new Exception("Array length mismatch");
 		}
-		
+
 		int n = values.length;
 		int knapSack[][] = new int[n + 1][max_weight + 1];
 
