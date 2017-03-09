@@ -8,3 +8,5 @@ Index:
 	Run Project then visit localhost:8089
 
 2.) MongoDemo: MongoDB and Java MVC demo application
+
+3.) Project Euler: Some solutions for project euler
